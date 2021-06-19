@@ -64,6 +64,7 @@ body {
   display: flex;
   align-items: center;
   margin-right: 61px;
+  cursor: pointer;
 }
 
 .header__sign-in {
@@ -194,6 +195,7 @@ body {
   border: 0;
   outline: none;
   margin-bottom: 44px;
+  cursor: pointer;
 }
 
 .main__notification-heading {
@@ -234,4 +236,44 @@ body {
   align-items: center;
   justify-content: center;
   color: #f7f7f7;
+  cursor: pointer;
+}
+
+.footer {
+  height: 360px;
+  background-image: url(../assets/footer.jpg);
+  display: flex;
+  align-items: center;
+}
+
+.footer__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer__links {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer__contacts {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer__link {
+  margin-right: 85px;
+}
+
+.footer__link--margin-right--0 {
+  margin-right: 0px;
+}
+
+.footer__contact {
+  margin-right: 27px;
+}
+
+.button :hover {
+  cursor: pointer;
 }
