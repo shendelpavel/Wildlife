@@ -1,0 +1,117 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 1440px;
+  font-family: Open Sans;
+  color: #f7f7f7;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.top {
+  height: 780px;
+  background-image: url(../assets/Fox.png);
+}
+
+.header {
+  padding-top: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo {
+  display: flex;
+  font-family: Roboto;
+  font-size: 32px;
+  line-height: 60px;
+  text-transform: uppercase;
+}
+
+.logo__logo-img {
+  margin-right: 15px;
+}
+
+.header__navigation {
+  display: flex;
+}
+
+.link {
+  text-decoration: none;
+  font-size: 23px;
+  line-height: 60px;
+  color: #f7f7f7;
+}
+
+.header__blog {
+  margin-right: 61px;
+}
+
+.header__contacts {
+  margin-right: 60px;
+}
+
+.header__search {
+  background-color: transparent;
+  border: 0;
+  outline: none;
+  display: flex;
+  align-items: center;
+  margin-right: 61px;
+}
+
+.header__sign-in {
+  align-self: center;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  padding: 2px 23px 0px;
+  border: 2px solid #cd6326;
+  box-sizing: border-box;
+  border-radius: 5px;
+}
+
+.header__sign-in-link {
+  font-family: Roboto;
+  line-height: 27px;
+}
+
+.top__content {
+  margin-top: 120px;
+}
+
+.top__heading {
+  height: 72px;
+  font-size: 48px;
+  line-height: 72px;
+  letter-spacing: 2px;
+  color: #cd6326;
+}
+
+.top__text {
+  margin-top: 51px;
+  width: 274px;
+  font-size: 18px;
+  line-height: 27px;
+}
+
+.top__donat {
+  margin-top: 49px;
+  width: 160px;
+  padding: 17px 42px 16px;
+  background: #cd6326;
+  border-radius: 5px;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.top__donat-link {
+  font-family: Roboto;
+  line-height: 27px;
+}
