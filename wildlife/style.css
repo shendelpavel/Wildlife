@@ -4,6 +4,7 @@
 }
 
 body {
+  margin: 0 auto;
   width: 1440px;
   font-family: Open Sans;
   color: #f7f7f7;
@@ -114,4 +115,123 @@ body {
 .top__donat-link {
   font-family: Roboto;
   line-height: 27px;
+}
+
+.main {
+  height: 1368px;
+  background-color: #cccccc;
+  padding-top: 120px;
+}
+
+.main__heading {
+  font-size: 48px;
+  line-height: 72px;
+  text-align: center;
+  color: #333333;
+}
+
+.main__text {
+  margin-top: 20px;
+  font-size: 24px;
+  line-height: 36px;
+  text-align: center;
+  color: #666666;
+}
+
+.card-slider {
+  margin-top: 120px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.card-deer {
+  height: 360px;
+  width: 300px;
+  background-image: url(../assets/Deer.jpg);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.card-squirrel {
+  height: 360px;
+  width: 300px;
+  background-image: url(../assets/Squirrel.jpg);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.card-bird {
+  height: 360px;
+  width: 300px;
+  background-image: url(../assets/Bird.jpg);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.card-heading {
+  font-size: 22px;
+  line-height: 36px;
+}
+
+.card-text {
+  margin-top: 10px;
+  margin-bottom: 40px;
+  font-size: 17px;
+  line-height: 27px;
+}
+
+.slider-button {
+  height: 30px;
+  background-color: transparent;
+  border: 0;
+  outline: none;
+  margin-bottom: 44px;
+}
+
+.main__notification-heading {
+  margin-top: 239px;
+  font-size: 27px;
+  line-height: 40px;
+  text-align: center;
+  color: #333333;
+}
+
+.main__email-form {
+  margin-top: 59px;
+  display: flex;
+  justify-content: center;
+}
+
+.main__input {
+  font-size: 23px;
+  line-height: 27px;
+  color: #666666;
+  height: 60px;
+  width: 540px;
+  background-color: transparent;
+  border: 1px solid #666666;
+  border-right: none;
+  padding-left: 15px;
+}
+
+.main__button {
+  width: 120px;
+  background-color: #cd6326;
+  border: 1px solid #cd6326;
+  border-radius: 0px 5px 5px 0px;
+  outline: none;
+  font-size: 23px;
+  line-height: 27px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #f7f7f7;
 }
