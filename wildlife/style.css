@@ -15,12 +15,12 @@ body {
   margin: 0 auto;
 }
 
-.top {
+.header {
   height: 780px;
   background-image: url(../assets/Fox.png);
 }
 
-.header {
+.top {
   padding-top: 20px;
   display: flex;
   justify-content: space-between;
@@ -84,11 +84,11 @@ body {
   line-height: 27px;
 }
 
-.top__content {
+.header__content {
   margin-top: 120px;
 }
 
-.top__heading {
+.header__heading {
   height: 72px;
   font-size: 48px;
   line-height: 72px;
@@ -96,14 +96,14 @@ body {
   color: #cd6326;
 }
 
-.top__text {
+.header__text {
   margin-top: 51px;
   width: 274px;
   font-size: 18px;
   line-height: 27px;
 }
 
-.top__donat {
+.header__donat {
   margin-top: 49px;
   width: 160px;
   padding: 17px 42px 16px;
@@ -113,7 +113,7 @@ body {
   box-sizing: border-box;
 }
 
-.top__donat-link {
+.header__donat-link {
   font-family: Roboto;
   line-height: 27px;
 }
@@ -147,9 +147,12 @@ body {
   justify-content: space-between;
 }
 
-.card-deer {
+.card-size {
   height: 360px;
   width: 300px;
+}
+
+.card-deer {
   background-image: url(../assets/Deer.jpg);
   display: flex;
   flex-direction: column;
@@ -158,8 +161,6 @@ body {
 }
 
 .card-squirrel {
-  height: 360px;
-  width: 300px;
   background-image: url(../assets/Squirrel.jpg);
   display: flex;
   flex-direction: column;
@@ -168,8 +169,6 @@ body {
 }
 
 .card-bird {
-  height: 360px;
-  width: 300px;
   background-image: url(../assets/Bird.jpg);
   display: flex;
   flex-direction: column;
@@ -286,4 +285,183 @@ body {
   src: url("../assets/Open-Sans.ttf") format("truetype");
   font-style: normal;
   font-weight: normal;
+}
+
+@media (max-width: 667px) {
+  body {
+    width: 100vw;
+  }
+
+  .header {
+    background-position: center;
+  }
+
+  .container {
+    width: 90vw;
+  }
+
+  .top {
+    flex-direction: column;
+  }
+
+  .header__logo {
+    margin: auto;
+  }
+
+  .header__navigation {
+    margin: 20px auto 0px;
+  }
+
+  .header__blog {
+    margin-right: 30px;
+  }
+
+  .header__contacts {
+    margin-right: 30px;
+  }
+
+  .header__search {
+    margin-right: 30px;
+  }
+
+  .link {
+    font-size: 20px;
+  }
+
+  .header__content {
+    margin-top: 90px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 30px;
+  }
+
+  .header__text {
+    margin-top: 30px;
+  }
+
+  .header__donat {
+    margin: 85px auto 0px;
+  }
+
+  .main {
+    height: 1020px;
+    padding-top: 65px;
+  }
+
+  .card-slider {
+    margin-top: 85px;
+  }
+
+  .card-squirrel {
+    display: none;
+  }
+
+  .card-bird {
+    display: none;
+  }
+
+  .main__notification-heading {
+    margin-top: 120px;
+  }
+
+  .footer {
+    height: 240px;
+    background-position: center;
+    align-items: flex-start;
+    padding-top: 35px;
+  }
+
+  .footer__content {
+    flex-direction: column;
+  }
+
+  .footer__links {
+    margin-top: 15px;
+  }
+
+  .footer__link {
+    margin-right: 35px;
+  }
+
+  .footer__link--margin-right--0 {
+    margin-right: 0px;
+  }
+
+  .footer__contacts {
+    margin-top: 21px;
+  }
+
+  .footer__contact--margin-right--0 {
+    margin-right: 0px;
+  }
+}
+
+@media (max-width: 375px) {
+  .header__blog {
+    margin-right: 20px;
+  }
+
+  .header__contacts {
+    margin-right: 20px;
+  }
+
+  .header__search {
+    margin-right: 20px;
+  }
+
+  .header__sign-in {
+    height: 40px;
+    padding: 2px 15px 0px;
+  }
+
+  .link {
+    font-size: 15px;
+  }
+
+  .header__donat {
+    padding: 17px 22px 16px;
+  }
+
+  .header__donat-link {
+    font-size: 19px;
+  }
+
+  .main {
+    height: 940px;
+  }
+
+  .main__heading {
+    font-size: 38px;
+    line-height: 62px;
+  }
+
+  .card-size {
+    height: 300px;
+    width: 240px;
+    background-position: center;
+  }
+
+  .card-text {
+    margin-bottom: 30px;
+  }
+
+  .main__notification-heading {
+    margin-top: 100px;
+  }
+
+  .main__input {
+    height: 40px;
+    width: 260px;
+    font-size: 15px;
+  }
+
+  .main__button {
+    width: 80px;
+    font-size: 15px;
+    line-height: 20px;
+  }
 }
