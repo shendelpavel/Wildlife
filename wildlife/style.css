@@ -344,8 +344,12 @@ body {
     margin-top: 30px;
   }
 
+  .header__donat-position {
+    text-align: center;
+  }
+
   .header__donat {
-    margin: 85px auto 0px;
+    margin-top: 85px;
   }
 
   .main {
