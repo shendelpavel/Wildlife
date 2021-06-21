@@ -104,8 +104,9 @@ body {
 }
 
 .header__donat {
+  display: inline-block;
   margin-top: 49px;
-  width: 160px;
+  min-width: 160px;
   padding: 17px 42px 16px;
   background: #cd6326;
   border-radius: 5px;
