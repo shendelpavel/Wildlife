@@ -275,6 +275,10 @@ body {
   margin-right: 27px;
 }
 
+.footer__contact--margin-right--0 {
+  margin-right: 0px;
+}
+
 @font-face {
   font-family: "Roboto";
   src: url("../assets/Roboto.ttf") format("truetype");
