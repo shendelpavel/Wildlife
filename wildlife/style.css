@@ -123,6 +123,7 @@ body {
   height: 1368px;
   background-color: #cccccc;
   padding-top: 120px;
+  box-sizing: border-box;
 }
 
 .main__heading {
