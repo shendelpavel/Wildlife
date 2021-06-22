@@ -16,8 +16,8 @@ body {
 }
 
 .header {
-  height: 780px;
   background-image: url(../assets/Fox.png);
+  padding-bottom: 240px;
 }
 
 .top {
@@ -49,15 +49,20 @@ body {
   color: #f7f7f7;
 }
 
-.header__blog {
+.link:hover {
+  text-decoration: underline;
+}
+
+.header__link--blog {
   margin-right: 61px;
 }
 
-.header__contacts {
+.header__link--contacts {
   margin-right: 60px;
 }
 
 .header__search {
+  width: 40px;
   background-color: transparent;
   border: 0;
   outline: none;
@@ -67,7 +72,11 @@ body {
   cursor: pointer;
 }
 
-.header__sign-in {
+.header__search:hover img {
+  width: 40px;
+}
+
+.header__link--sign-in {
   align-self: center;
   height: 50px;
   display: flex;
@@ -77,11 +86,20 @@ body {
   border: 2px solid #cd6326;
   box-sizing: border-box;
   border-radius: 5px;
+  transition: 0.5s;
+}
+
+.header__link--sign-in:hover {
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 .header__sign-in-link {
   font-family: Roboto;
   line-height: 27px;
+}
+
+.header__sign-in-link:hover {
+  text-decoration: none;
 }
 
 .header__content {
@@ -120,10 +138,10 @@ body {
 }
 
 .main {
-  height: 1368px;
   background-color: #cccccc;
   padding-top: 120px;
   box-sizing: border-box;
+  padding-bottom: 240px;
 }
 
 .main__heading {
@@ -149,33 +167,25 @@ body {
   justify-content: space-between;
 }
 
-.card-size {
+.card {
   height: 360px;
   width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
 }
 
-.card-deer {
+.card--deer {
   background-image: url(../assets/Deer.jpg);
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  align-items: center;
 }
 
-.card-squirrel {
+.card--squirrel {
   background-image: url(../assets/Squirrel.jpg);
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  align-items: center;
 }
 
-.card-bird {
+.card--bird {
   background-image: url(../assets/Bird.jpg);
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  align-items: center;
 }
 
 .card-heading {
@@ -207,8 +217,11 @@ body {
   color: #333333;
 }
 
-.main__email-form {
+.main__form {
   margin-top: 59px;
+}
+
+.form {
   display: flex;
   justify-content: center;
 }
@@ -238,13 +251,18 @@ body {
   justify-content: center;
   color: #f7f7f7;
   cursor: pointer;
+  transition: 0.5s;
+}
+
+.main__button:hover {
+  background-color: #f7f7f7;
+  border-color: #f7f7f7;
+  color: #cd6326;
 }
 
 .footer {
-  height: 360px;
   background-image: url(../assets/footer.jpg);
-  display: flex;
-  align-items: center;
+  padding: 150px 0px;
 }
 
 .footer__content {
@@ -272,11 +290,18 @@ body {
 }
 
 .footer__contact {
+  width: 50px;
   margin-right: 27px;
+  display: flex;
+  align-items: center;
 }
 
 .footer__contact--margin-right--0 {
   margin-right: 0px;
+}
+
+.footer__img-link:hover {
+  width: 50px;
 }
 
 @font-face {
@@ -300,6 +325,7 @@ body {
 
   .header {
     background-position: center;
+    padding-bottom: 140px;
   }
 
   .container {
@@ -358,19 +384,19 @@ body {
   }
 
   .main {
-    height: 1020px;
     padding-top: 65px;
+    padding-bottom: 140px;
   }
 
   .card-slider {
     margin-top: 85px;
   }
 
-  .card-squirrel {
+  .card--squirrel {
     display: none;
   }
 
-  .card-bird {
+  .card--bird {
     display: none;
   }
 
@@ -379,10 +405,9 @@ body {
   }
 
   .footer {
-    height: 240px;
     background-position: center;
     align-items: flex-start;
-    padding-top: 35px;
+    padding: 50px 0px;
   }
 
   .footer__content {
@@ -438,10 +463,6 @@ body {
 
   .header__donat-link {
     font-size: 19px;
-  }
-
-  .main {
-    height: 940px;
   }
 
   .main__heading {
