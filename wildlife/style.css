@@ -344,11 +344,11 @@ body {
     margin: 20px auto 0px;
   }
 
-  .header__blog {
+  .header__link--blog {
     margin-right: 30px;
   }
 
-  .header__contacts {
+  .header__link--сontacts {
     margin-right: 30px;
   }
 
@@ -436,11 +436,11 @@ body {
 }
 
 @media (max-width: 375px) {
-  .header__blog {
+  .header__link--blog {
     margin-right: 20px;
   }
 
-  .header__contacts {
+  .header__link--contacts {
     margin-right: 20px;
   }
 
@@ -448,7 +448,7 @@ body {
     margin-right: 20px;
   }
 
-  .header__sign-in {
+  .header__link--sign-in {
     height: 40px;
     padding: 2px 15px 0px;
   }
